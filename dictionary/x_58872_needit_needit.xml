@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" sizeclass="3" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" default="legal" label="Requested type" mandatory="true" max_length="40" name="u_choice_3" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Human resource" sequence="0" value="HR"/>
+                <element inactive_on_update="false" label="Facilites" sequence="1" value="facilites"/>
+                <element inactive_on_update="false" label="Legal" sequence="2" value="legal"/>
+                <element inactive_on_update="false" label="Your Departmental Choice" sequence="3" value="your choice"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="legal 1" label="What needed" mandatory="true" max_length="40" name="u_choice_4" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Human resource 1" sequence="0" value="HR1"/>
+                <element inactive_on_update="false" label="Human resource 2" sequence="1" value="HR2"/>
+                <element inactive_on_update="false" label="Legal 1" sequence="2" value="legal 1"/>
+                <element inactive_on_update="false" label="Legal 2" sequence="3" value="legal 2"/>
+                <element inactive_on_update="false" label="Your Departmental choice 1" sequence="4" value="your departmental choice 1"/>
+                <element inactive_on_update="false" label="Your Departmental choice 2" sequence="5" value="your departmental choice 2"/>
+            </choice>
+        </element>
+        <element label="When needed" mandatory="true" max_length="40" name="u_glide_date_time_1" type="glide_date_time"/>
+        <element label="Requested for" mandatory="true" max_length="32" name="u_reference_2" reference="sys_user" type="reference"/>
+    </element>
+</database>
